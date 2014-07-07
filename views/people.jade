@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+  body
+    nav.navbar.navbar-inverse.container-fluid(role='navigation')
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='') KrupaTrust
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li
+            a(href='/') Home
+          li
+            a(href='/vision') Vision
+          li.active
+            a(href='/people') People
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='#') Login
+
+block content
+  h1= title
+  ul.media-list
+  li.media
+    a.pull-left(href='#')
+      img.media-object(alt='...', src='images/rajaRao.jpg')
+    .media-body
+      h4.media-heading Media heading
+      this is gr8
+  li.media
+    a.pull-left(href='#')
+      img.media-object(alt='...', src='images/sandhyaRani.jpg')
+    .media-body
+      h4.media-heading Media heading
+      this is gr8
+  li.media
+    a.pull-left(href='#')
+      img.media-object(alt='...', src='images/teja.jpg')
+    .media-body
+      h4.media-heading Media heading
+      this is gr8
+  
